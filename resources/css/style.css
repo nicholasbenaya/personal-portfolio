@@ -65,6 +65,7 @@ main {
     grid-template-rows:  3fr 2fr 1fr;
     grid-template-columns: 2fr 1fr;
 }
+/* About Section */
 #about {
     grid-area: about;
     display: flex;
@@ -91,7 +92,35 @@ main {
     }
     #about img {
         width: 350px;
-        height: 400px
-        
+        height: 400px;
     }
+}
+
+/* project section */
+#project {
+    grid-area: project;
+    margin-top: 20px;
+}
+#project h2 {
+    cursor: pointer;
+}
+#project figure {
+    flex: 500px;
+}
+#project-1, #project-2 {
+    display: none;
+}
+
+#project figure img {
+    width: 50%;
+}
+@media only screen and (max-width: 768px) {
+    #project {
+        text-align: center;
+    }
+}
+
+/* Skills section */
+#skills {
+    margin-top: 20px;
 }
