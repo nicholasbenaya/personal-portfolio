@@ -14,6 +14,8 @@ body {
     line-height: 1.6;
 }
 
+
+
 /* Header section */
 header {
     display: flex;
@@ -103,6 +105,7 @@ main {
 }
 #project h2 {
     cursor: pointer;
+    display: inline-block;
 }
 #project figure {
     flex: 500px;
@@ -122,5 +125,44 @@ main {
 
 /* Skills section */
 #skills {
+    margin-top: 20px;
+    grid-area: skills;
+}
+#skills .skill {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+@media only screen and (max-width: 768px) {
+    #skills {
+        text-align: center;
+    }
+}
+
+/* contact section */
+#contact {
+    text-align: center;
+    margin: auto 0;
+    
+}
+#contact .contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact .contact-icons a {
+    text-decoration: none;
+    color: inherit;
+    margin: 10px 15px;
+}
+
+/* footer section */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
     margin-top: 20px;
 }
